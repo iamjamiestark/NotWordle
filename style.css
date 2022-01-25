@@ -1,0 +1,116 @@
+body {
+    background-color: #121213;
+}
+
+#main-content {
+    background-color: #121213;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#word-attempts {
+    margin: 25px;
+  }
+
+#game-keyboard {
+    background-color: #121213;
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(-50%, 0);
+}
+
+  table {
+     margin: 0px auto 0px auto;
+     border-spacing: 7px;
+  }
+
+  td {
+      color: white;
+      padding: 10px;
+      background-color: rgb(119, 119, 119);
+      font-family: sans-serif;
+      font-size: 16pt;
+      font-weight: bold;
+      width: 10px;
+      height: 40px;
+      text-align: center;
+      border-radius: 5px;
+  }
+
+.char {
+    width: 60px;
+    padding: 0;
+    height: 60px;
+    text-align: center;
+    margin: 3px;
+    margin-right: -2px;
+    border-width: 2px;
+    border-radius: 2px;
+    text-decoration: none;
+    border-color: #555;
+    border-style: solid;
+    background-color: #121213;
+    color: #fff;
+    font-size: 24pt;
+    font-weight: bold;
+}
+
+.containsLetter {
+    background-color: #caa836;
+}
+
+.correctLetter {
+    background-color: #5a8b43;
+}
+
+.wrongLetter {
+    background-color: #4e4e4e;
+}
+
+.buttonContainer {
+    width: 300px;
+    margin: 10px auto 10px auto;
+}
+
+.submitButton {
+    display: block;
+    width: 250px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #5a8b43;
+    border-style: solid;
+    border-color: #5a8b43;
+    font-size: 21px;
+    font-weight: bold;
+    color: #fff;
+    margin: 15px auto 0 auto;
+}
+
+.newGameButton {
+    display: block;
+    width: 250px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #caa836;
+    border-style: solid;
+    border-color: #caa836;
+    font-size: 21px;
+    font-weight: bold;
+    color: #fff;
+    margin: 15px auto 0 auto;
+}
+
+.gameText {
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 18pt;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}

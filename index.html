@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NotWordle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main-content">
+        <span class="gameText">NotWordle!</span><br>
+        <span id="game-finished" class="gameText"></span>        
+        <div id="word-attempts">
+            <div id="attempt-1">
+                <input id="a1c1" class="char" type="text" onkeyup="this.value = this.value.toUpperCase();"
+                    maxlength="1">
+                <input id="a1c2" class="char" type="text" onkeyup="this.value = this.value.toUpperCase();"
+                    maxlength="1">
+                <input id="a1c3" class="char" type="text" onkeyup="this.value = this.value.toUpperCase();"
+                    maxlength="1">
+                <input id="a1c4" class="char" type="text" onkeyup="this.value = this.value.toUpperCase();"
+                    maxlength="1">
+                <input id="a1c5" class="char" type="text" onkeyup="this.value = this.value.toUpperCase();"
+                    maxlength="1">
+            </div>
+            <div id="attempt-2">
+                <input id="a2c1" class="char" type="text" onkeyup="this.value = this.value.toUpperCase();"
+                    maxlength="1">
+                <input id="a2c2" class="char" type="text" onkeyup="this.value = this.value.toUpperCase();"
+                    maxlength="1">
+                <input id="a2c3" class="char" type="text" onkeyup="this.value = this.value.toUpperCase();"
+                    maxlength="1">
+                <input id="a2c4" class="char" type="text" onkeyup="this.value = this.value.toUpperCase();"
+                    maxlength="1">
+                <input id="a2c5" class="char" type="text" onkeyup="this.value = this.value.toUpperCase();"
+                    maxlength="1">
+            </div>
+            <div id="attempt-3">
+                <input id="a3c1" class="char" type="text" onkeyup="this.value = this.value.toUpperCase();"
+                    maxlength="1">
+                <input id="a3c2" class="char" type="text" onkeyup="this.value = this.value.toUpperCase();"
+                    maxlength="1">
+                <input id="a3c3" class="char" type="text" onkeyup="this.value = this.value.toUpperCase();"
+                    maxlength="1">
+                <input id="a3c4" class="char" type="text" onkeyup="this.value = this.value.toUpperCase();"
+                    maxlength="1">
+                <input id="a3c5" class="char" type="text" onkeyup="this.value = this.value.toUpperCase();"
+                    maxlength="1">
+            </div>
+            <div id="attempt-4">
+                <input id="a4c1" class="char" type="text" onkeyup="this.value = this.value.toUpperCase();"
+                    maxlength="1">
+                <input id="a4c2" class="char" type="text" onkeyup="this.value = this.value.toUpperCase();"
+                    maxlength="1">
+                <input id="a4c3" class="char" type="text" onkeyup="this.value = this.value.toUpperCase();"
+                    maxlength="1">
+                <input id="a4c4" class="char" type="text" onkeyup="this.value = this.value.toUpperCase();"
+                    maxlength="1">
+                <input id="a4c5" class="char" type="text" onkeyup="this.value = this.value.toUpperCase();"
+                    maxlength="1">
+            </div>
+            <div id="attempt-5">
+                <input id="a5c1" class="char" type="text" onkeyup="this.value = this.value.toUpperCase();"
+                    maxlength="1">
+                <input id="a5c2" class="char" type="text" onkeyup="this.value = this.value.toUpperCase();"
+                    maxlength="1">
+                <input id="a5c3" class="char" type="text" onkeyup="this.value = this.value.toUpperCase();"
+                    maxlength="1">
+                <input id="a5c4" class="char" type="text" onkeyup="this.value = this.value.toUpperCase();"
+                    maxlength="1">
+                <input id="a5c5" class="char" type="text" onkeyup="this.value = this.value.toUpperCase();"
+                    maxlength="1">
+            </div>
+            <div id="attempt-6">
+                <input id="a6c1" class="char" type="text" onkeyup="this.value = this.value.toUpperCase();"
+                    maxlength="1">
+                <input id="a6c2" class="char" type="text" onkeyup="this.value = this.value.toUpperCase();"
+                    maxlength="1">
+                <input id="a6c3" class="char" type="text" onkeyup="this.value = this.value.toUpperCase();"
+                    maxlength="1">
+                <input id="a6c4" class="char" type="text" onkeyup="this.value = this.value.toUpperCase();"
+                    maxlength="1">
+                <input id="a6c5" class="char" type="text" onkeyup="this.value = this.value.toUpperCase();"
+                    maxlength="1">
+            </div>
+        </div>
+        <div class="buttonContainer">
+            <button class="submitButton" onclick="checkAnswer()">SUBMIT</button>
+            <button class="newGameButton" onclick="reloadPage()">NEW GAME</button>
+        </div>
+    </div>
+    <div id="game-keyboard">
+        <table>
+            <tr>
+                <td id="q">Q</td>
+                <td id="w">W</td>
+                <td id="e">E</td>
+                <td id="r">R</td>
+                <td id="t">T</td>
+                <td id="y">Y</td>
+                <td id="u">U</td>
+                <td id="i">I</td>
+                <td id="o">O</td>
+                <td id="p">P</td>
+            </tr>
+            </table>
+            <table>
+            <tr>
+                <td id="a">A</td>
+                <td id="s">S</td>
+                <td id="d">D</td>
+                <td id="f">F</td>
+                <td id="g">G</td>
+                <td id="h">H</td>
+                <td id="j">J</td>
+                <td id="k">K</td>
+                <td id="l">L</td>
+            </tr>
+            </table>
+            <table>
+                       <tr>
+                <!-- <td id="enter">ENT</td> -->
+                <td id="z">Z</td>
+                <td id="x">X</td>
+                <td id="c">C</td>
+                <td id="v">V</td>
+                <td id="b">B</td>
+                <td id="n">N</td>
+                <td id="m">M</td>
+                <!-- <td id="delete">DEL</td> -->
+            </tr>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
